@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PIM-VIII\\Maui_PIMVIII\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3455DE-3E7B-4EDE-8283-E09DAFACE917}|Maui_PIMVIII\\Maui_PIMVIII.csproj|c:\\pim-viii\\maui_pimviii\\maui_pimviii\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9D3455DE-3E7B-4EDE-8283-E09DAFACE917}|Maui_PIMVIII\\Maui_PIMVIII.csproj|solutionrelative:maui_pimviii\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3455DE-3E7B-4EDE-8283-E09DAFACE917}|Maui_PIMVIII\\Maui_PIMVIII.csproj|c:\\pim-viii\\maui_pimviii\\maui_pimviii\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3455DE-3E7B-4EDE-8283-E09DAFACE917}|Maui_PIMVIII\\Maui_PIMVIII.csproj|solutionrelative:maui_pimviii\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\PIM-VIII\\Maui_PIMVIII\\Maui_PIMVIII\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Maui_PIMVIII\\MainPage.xaml.cs",
+              "ToolTip": "C:\\PIM-VIII\\Maui_PIMVIII\\Maui_PIMVIII\\MainPage.xaml.cs",
+              "RelativeToolTip": "Maui_PIMVIII\\MainPage.xaml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswBUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T20:28:32.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\PIM-VIII\\Maui_PIMVIII\\Maui_PIMVIII\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Maui_PIMVIII\\MainPage.xaml",
+              "ToolTip": "C:\\PIM-VIII\\Maui_PIMVIII\\Maui_PIMVIII\\MainPage.xaml",
+              "RelativeToolTip": "Maui_PIMVIII\\MainPage.xaml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAEwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T20:25:09.499Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

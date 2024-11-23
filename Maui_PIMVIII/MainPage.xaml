@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_PIMVIII.MainPage"
+             BarBackground="LightBlue">
+
+    <ContentPage
+        Title="Upload Conteúdo"
+        
+        >
+
+        <ScrollView>
+
+            <VerticalStackLayout Margin="20">
+                <Label 
+                    Text="Upload Conteúdo "
+                    FontSize="Header"
+                    HorizontalOptions="Center" 
+                    Padding="10" />
+
+                <Button
+                    x:Name="BTNClick"
+                    Text="Selecionar Conteúdo..." 
+                    HorizontalOptions="Center" 
+                    Clicked="BTNClick_Clicked" 
+                    IsEnabled="{Binding VideoSelected}"/>
+
+                <Label
+                    x:Name="videoPathLabel"
+                    Text="Nenhum Conteúdo Selecionado"
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Margin="10" />
+
+                <Button 
+                    Text="Upload de Vídeo" 
+                    Clicked="OnUploadVideoClicked" 
+                    IsEnabled="{Binding VideoSelected}" />
+
+                <Label
+                    x:Name="uploadStatusLabel"
+                    Text=""
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Margin="10" />
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </ContentPage>
+
+    <ContentPage
+        Title="Gestão Playlist"
+        
+        >
+
+        <ScrollView>
+
+            <VerticalStackLayout Margin="20">
+                <Label 
+                    Text="Gestão Playlist"
+                    FontSize="Header"
+                    HorizontalOptions="Center" 
+                    Padding="10" />
+
+                <Entry
+                    x:Name="songEntry"
+                    Placeholder="Digite o título da música"
+                    HorizontalOptions="FillAndExpand" />
+
+                <Button
+                    Text="Adicionar Música"
+                    Clicked="OnAddSongClicked" />
+
+                <ListView
+                    x:Name="playlist"
+                    Margin="10"
+                    ItemsSource="{Binding Playlist}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout 
+                                    Orientation="Horizontal">
+                                    <Label 
+                                        Text="{Binding Name}" 
+                                        VerticalOptions="Center" />
+
+                                    <Button
+                                        Text="Remover"
+                                        Clicked="OnRemoveSongClicked"
+                                        CommandParameter="{Binding .}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+        
+    </ContentPage>
+
+    <ContentPage
+        Title="Análise Métricas"
+        
+        >
+
+        <ScrollView>
+
+            <VerticalStackLayout Margin="20">
+                <Label 
+                    Text="Análise Métricas Playlist"
+                    FontSize="Header"
+                    HorizontalOptions="Center" 
+                    Padding="10" />
+
+                <ListView
+                    x:Name="playlistView"
+                    Margin="10"
+                    ItemsSource="{Binding Playlist}" >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" VerticalOptions="Center" />
+                                    <Label Text="{Binding Duration, StringFormat='{0:mm\\:ss}'}" 
+                                            VerticalOptions="Center" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="Número Total de Músicas: " VerticalOptions="Center"/>
+                    <Label x:Name="totalSongsLabel" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="Duração Total: " VerticalOptions="Center"/>
+                    <Label x:Name="totalDurationLabel" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Label Text="Duração Média: " VerticalOptions="Center"/>
+                    <Label x:Name="averageDurationLabel" VerticalOptions="Center"/>
+                </StackLayout>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </ContentPage>
+
+    
+
+</TabbedPage>
